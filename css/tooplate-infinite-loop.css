@@ -9,13 +9,14 @@ https://www.tooplate.com/view/2117-infinite-loop
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
 
 body {
-	font-family: "Raleway", sans-serif;
-	font-size: 1.2em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
   color: #707070;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
+
 a {
   transition: all 0.3s ease;
   color: #38B;
@@ -149,7 +150,7 @@ blockquote {
 /* Hero */
 
 #infinite {
-	background-color: #222;
+  background-color: #222;
   background-image: url(../img/infinite-loop-04.jpg);
   background-repeat: no-repeat;
   height: 100vh;
@@ -231,11 +232,11 @@ blockquote {
 }
 
 .tm-down-arrow {
-  	color: #FFF;
-    cursor: pointer;
-    background: #357;
-    padding: 15px 40px;
-    transition: all 0.3s ease;
+  color: #FFF;
+  cursor: pointer;
+  background: #357;
+  padding: 15px 40px;
+  transition: all 0.3s ease;
 }
 
 .tm-down-arrow:hover,
@@ -266,7 +267,7 @@ blockquote {
 }
 
 .tm-continue {
-	padding: 20px 0 30px 0;
+  padding: 20px 0 30px 0;
 }
 
 /* Testimonials */
@@ -406,7 +407,7 @@ blockquote {
 }
 
 .grid figure figcaption,
-.grid figure figcaption > a {
+.grid figure figcaption>a {
   position: absolute;
   top: 0;
   left: 0;
@@ -416,7 +417,7 @@ blockquote {
 
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
-.grid figure figcaption > a {
+.grid figure figcaption>a {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -510,8 +511,290 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-container-gallery {
-	padding-top: 30px;
-	}
+  padding-top: 30px;
+}
+
+/* -----------------------Featured Cars--------------------------------------------------------*/
+.allcontain {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img1colon {
+  max-width: 46.3%;
+}
+
+.img1colon>img {
+
+  width: 100%;
+  height: 10cm;
+
+}
+
+.costumrow {
+  border-top: 1px solid #BABABA;
+  border-bottom: 1px solid #BABABA;
+}
+
+.txt1colon {
+  width: 53.7%;
+}
+
+.featurecontant {
+  width: 85%;
+  height: auto;
+  border: 1px solid #38B;
+  margin-top: 7%;
+
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.featurecontant>h1 {
+  font-family: "OpenSans Regular";
+  font-size: 19.8px;
+  text-align: center;
+  color: #5B5B5B;
+  margin-top: 14%;
+  margin-bottom: 8px;
+
+}
+
+.featurecontant>p {
+  font-family: "OpenSans Regular";
+  font-size: 11.44px;
+  text-align: center;
+  color: #5B5B5B;
+}
+
+.featurecontant>h2 {
+  font-family: "OpenSans Regular";
+  font-size: 12.41pt;
+  color: #020243;
+  text-align: center;
+  letter-spacing: 8px;
+  margin-top: 36%;
+  margin-bottom: 19px;
+}
+
+.featurecontant>button {
+  background: #020243;
+  border: 1px solid #020243;
+  font-family: "OpenSans Regular";
+  font-size: 19px;
+  color: #fff;
+  letter-spacing: 5px;
+  width: 68%;
+  margin-left: 17%;
+  margin-bottom: 26px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.featurecontant>button:hover {
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .2s ease-in;
+  border: 1px solid #020243;
+  background: none;
+  color: #020243;
+}
+
+
+.img2colon {
+  padding: 0px !important;
+  margin: 0px !important;
+  max-width: 46.3%;
+
+}
+
+.img2colon>img {
+  width: 100%;
+}
+
+#readmore {
+  overflow-y: auto;
+  position: absolute;
+  background-color: #fff;
+  top: 0px;
+  margin-top: 30px;
+  height: 0px;
+  max-width: 290px;
+}
+
+#readmore>h1 {
+  text-align: center;
+  font-family: "OpenSans Regular";
+  color: #5B5B5B;
+  font-size: 19.8px;
+}
+
+#readmore>p {
+  font-family: "OpenSans Regular";
+  font-size: 11.44px;
+  text-align: center;
+  color: #5B5B5B;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#readmore>button {
+  background: none;
+  border: 1px solid #020243;
+  font-family: "OpenSans Regular";
+  font-size: 19px;
+  color: #020243;
+  letter-spacing: 5px;
+  width: 70%;
+  margin-left: 17%;
+  margin-bottom: 26px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#readmore>button:hover {
+  background: #020243;
+  color: #fff;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+#readmore2 {
+  overflow-y: auto;
+  position: absolute;
+  background-color: #fff;
+  top: 0px;
+  margin-top: 30px;
+  height: 0px;
+  max-width: 290px;
+}
+
+#readmore2>h1 {
+  text-align: center;
+  font-family: "OpenSans Regular";
+  color: #5B5B5B;
+  font-size: 19.8px;
+}
+
+#readmore2>p {
+  font-family: "OpenSans Regular";
+  font-size: 11.44px;
+  text-align: center;
+  color: #5B5B5B;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#readmore2>button {
+  background: none;
+  border: 1px solid #020243;
+  font-family: "OpenSans Regular";
+  font-size: 19px;
+  color: #020243;
+  letter-spacing: 5px;
+  width: 68%;
+  margin-left: 17%;
+  margin-bottom: 26px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#readmore2>button:hover {
+  background: #020243;
+  color: #fff;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+@media screen and (max-width: 1198px) {
+  .featurecontant {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+
+  .costumrow {
+    border-top: 0px solid #BABABA;
+    border-bottom: 0px solid #BABABA;
+  }
+
+  .colborder1 {
+    border-top: 1px solid #BABABA;
+    border-left: 1px solid #BABABA;
+    border-right: 1px solid #BABABA;
+    border-bottom: 1px solid #BABABA;
+  }
+
+  .colborder2 {
+    border-left: 1px solid #BABABA;
+    border-right: 1px solid #BABABA;
+    border-bottom: 1px solid #BABABA;
+  }
+
+  .costumcol {
+    display: block;
+    max-width: 683px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .colborder1 {
+    border-top: 0px solid #BABABA;
+    border-left: 0px solid #BABABA;
+    border-right: 0px solid #BABABA;
+    border-bottom: 0px;
+  }
+
+  .img1colon>img {
+    width: 312px;
+    margin-left: 3px;
+  }
+
+  .img2colon>img {
+    width: 312px;
+    margin-left: 3px;
+  }
+
+  .colborder2 {
+    border: 0px solid #BABABA;
+  }
+
+  .txt1colon {
+    width: 310px;
+    margin-left: 3px;
+  }
+
+  .featurecontant {
+
+    width: 100%;
+  }
+
+  .costumcol {
+    display: block;
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #readmore {
+    max-width: 99%;
+  }
+
+  #readmore2 {
+    max-width: 99%;
+  }
+}
 
 /* Contact */
 
@@ -549,8 +832,8 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-input {
-	margin: 0 0 20px 0;
-	width: 90%;
+  margin: 0 0 20px 0;
+  width: 90%;
   padding: 8px 20px;
   border-radius: 6px;
   border: 1px solid white;
@@ -559,22 +842,23 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-btn-submit {
-	font-size: 0.9em;
-	color: #fff;
-	background-color: #369;
-	width: 50%;
-	margin-bottom: 60px;
+  font-size: 0.9em;
+  color: #fff;
+  background-color: #369;
+  width: 50%;
+  margin-bottom: 60px;
 }
 
 .tm-btn-submit:hover {
-	color: #fff;
-	background-color: #38B;
+  color: #fff;
+  background-color: #38B;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
 :-ms-input-placeholder {
@@ -596,11 +880,11 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-footer a {
-	color: #fff;
+  color: #fff;
 }
 
 .tm-footer a:hover {
-	color: #9CF;
+  color: #9CF;
 }
 
 .tm-footer-link {
@@ -678,7 +962,7 @@ p {
 
   .navbar-collapse .nav-link {
     color: #707070;
-	padding-right: 20px;
+    padding-right: 20px;
   }
 }
 
