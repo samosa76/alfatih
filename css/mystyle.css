@@ -794,6 +794,7 @@ font-weight: bold;
 .img1colon>img{
  
 	width: 100%;
+	height: 10cm;
   
 }
 .costumrow{
@@ -806,8 +807,8 @@ font-weight: bold;
 .featurecontant{
 	width:85%;
 	height: auto;
-	border: 1px solid #C59E47;
-	margin-top: 7%;
+	border: 1px solid #35088a;
+	margin-top: 20%;
  
 	margin-right: auto;
 	margin-left: auto;

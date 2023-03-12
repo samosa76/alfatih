@@ -391,11 +391,10 @@ strong {
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .about-thumb {
-  background: var(--primary-color);
+  background: rgb(244,125,35,255);
   border-radius: 20px;
   margin-bottom: 24px;
   padding: 40px;

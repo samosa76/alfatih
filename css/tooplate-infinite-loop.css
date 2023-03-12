@@ -49,6 +49,10 @@ blockquote {
   padding-bottom: 40px;
 }
 
+.tm-section-pad-bot {
+  padding-bottom: 20px;
+}
+
 .tm-content-box {
   padding-top: 20px;
   padding-bottom: 40px;
