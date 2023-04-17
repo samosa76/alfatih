@@ -13,6 +13,7 @@ https://www.tooplate.com/view/2117-infinite-loop
   --section-bg-color:             #f5f5f5;
   --dark-color:                   #000000;
   --p-color:                      #717275;
+  --grey-color:                   #E5E0FF;
   --orange-color:                 #f47d23;
 
   --body-font-family:             'DM Sans', sans-serif;
@@ -26,6 +27,10 @@ https://www.tooplate.com/view/2117-infinite-loop
   --p-font-size:                  18px;
   --menu-font-size:               14px;
   --copyright-text-font-size:     16px;
+
+  --border-radius-large:          100px;
+  --border-radius-medium:         20px;
+  --border-radius-small:          10px;
 
   --font-weight-normal:           400;
   --font-weight-medium:           500;
@@ -291,6 +296,154 @@ blockquote {
 	padding: 20px 0 30px 0;
 }
 
+
+/*---------------------------------------
+  CUSTOM LINK               
+-----------------------------------------*/
+.link {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+}
+
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before {
+  content: '';
+}
+
+.link--herse::before {
+  display: none;
+}
+
+.link__graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  fill: none;
+  stroke: var(--dark-color);
+  stroke-width: 1px;
+}
+
+.link__graphic--stroke path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+.link:hover .link__graphic--stroke path {
+  stroke-dashoffset: 0;
+}
+
+.link__graphic--arc {
+  top: 73%;
+  left: -23%;
+}
+
+.link__graphic--arc path {
+  transition: stroke-dashoffset 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.link:hover .link__graphic--arc path {
+  transition-timing-function: cubic-bezier(0.8, 1, 0.7, 1);
+  transition-duration: 0.3s;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button--atlas > span {
+  display: inline-block;
+}
+
+.button--atlas:hover > span {
+  opacity: 0;
+}
+
+.marquee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  --offset: 1rem;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 1s linear infinite;
+  animation-play-state: paused;
+  opacity: 0;
+}
+
+.button--atlas:hover .marquee__inner {
+  animation-play-state: running;
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+.marquee span {
+  text-align: center;
+  white-space: nowrap;
+  font-style: italic;
+  padding: 15px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+
+.button--pan {
+  overflow: hidden;
+}
+
+.button--pan span {
+  position: relative;
+}
+
+.button--pan::before {
+  content: '';
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.button--pan:hover::before {
+  background: transparent;
+  transform: translate3d(0,-100%,0);
+}
+
+
 /*---------------------------------------
   PROJECTS              
 -----------------------------------------*/
@@ -365,6 +518,75 @@ blockquote {
 .projects-btn-wrap .custom-btn {
   font-size: 30px;
   padding: 7.5px 15px;
+}
+
+/*---------------------------------------
+  SERVICES              
+-----------------------------------------*/
+.services-thumb {
+  background-color: var(--grey-color);
+  border-radius: var(--border-radius-small);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 24px;
+  padding: 30px;
+}
+
+.services-thumb.section-bg {
+  background: var(--section-bg-color);
+}
+
+.services-detail-section .services-image {
+  aspect-ratio: 0;
+}
+
+.services-image-wrap {
+  border-radius: var(--border-radius-small);
+  position: relative;
+  overflow: hidden;
+}
+
+.services-image-wrap:hover .services-image-hover {
+  opacity: 1;
+}
+
+.services-title-link {
+  display: block;
+}
+
+.services-image,
+.team-image {
+  border-radius: var(--border-radius-small);
+  display: block;
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+.services-image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.services-icon-wrap {
+  background: var(--secondary-color);
+  color: var(--white-color);
+  font-size: var(--h3-font-size);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: opacity 0.5s;
+  padding: 8px 12px;
+}
+
+.services-icon-wrap .button--skoll {
+  width: 100%;
+  height: 100%;
 }
 
 /*---------------------------------------
