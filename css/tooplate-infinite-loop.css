@@ -543,7 +543,7 @@ blockquote {
 }
 
 @media (max-width: 991px) {
-  .detail-image2 {
+  .hide-image {
     display: none;
   }
 }
@@ -1034,31 +1034,58 @@ figure.effect-honey:hover h2 i {
   color: white;
 }
 
-.tm-footer {
-  position: absolute;
-  bottom: 35px;
-  left: 0;
-  right: 0;
-  padding: 0 15px;
+/*---------------------------------------
+  SITE FOOTER              
+-----------------------------------------*/
+.site-footer {
+  background: var(--primary-color);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
 }
 
-.tm-footer a {
-	color: #fff;
+.site-footer-wrap {
+  flex-direction: column;
 }
 
-.tm-footer a:hover {
-	color: #9CF;
+.site-footer .copyright-text {
+  color: var(--white-color);
+  font-size: var(--copyright-text-font-size);
 }
 
-.tm-footer-link {
-  color: white;
+/*---------------------------------------
+  SOCIAL ICON               
+-----------------------------------------*/
+.social-icon {
+  margin: 0;
+  padding: 0;
 }
 
-.tm-footer-link:hover,
-.tm-footer-link:focus {
-  color: #38B;
-  text-decoration: none;
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
 }
+
+.social-icon-link {
+  background: var(--white-color);
+  border-radius: 20px;
+  font-size: var(--copyright-text-font-size);
+  color: var(--dark-color);
+  display: inline-block;
+  vertical-align: top;
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-icon-link:hover {
+  color: var(--primary-color);
+}
+
+/*-----------------------------------------*/
 
 p {
   line-height: 1.9;

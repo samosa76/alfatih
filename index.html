@@ -12,10 +12,7 @@
   <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-  <!--
-Tooplate 2117 Infinite Loop
-https://www.tooplate.com/view/2117-infinite-loop
--->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 
 </head> 
 
@@ -354,66 +351,37 @@ https://www.tooplate.com/view/2117-infinite-loop
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="tm-section-pad-top tm-parallax-2">
+  <footer class="site-footer">
+    <div class="container">
+        <div class="row">
+                
+            <div class="col-lg-6 col-12">
+                <div class="site-footer-wrap d-flex align-items-center">
+                    <p class="copyright-text mb-0 me-4">Pondok Pesantren Multimedia Al-fatih</p>
 
-    <div class="container tm-container-contact">
+                    <ul class="social-icon">
+                        <li><a href="https://facebook.com/tooplate" class="social-icon-link bi-facebook"></a></li>
 
-      <div class="row">
+                        <li><a href="https://pinterest.com/tooplate" class="social-icon-link bi-pinterest"></a></li>
 
-        <div class="text-center col-12">
-          <h2 class="tm-section-title mb-4">Contact Us</h2>
-          <p class="mb-5">
-            Silahkan hubungi kami jika anda memiliki pertanyaan lebih lanjut
-          </p><br>
+                        <li><a href="https://twitter.com/minthu" class="social-icon-link bi-twitter"></a></li>
+
+                        <li><a href="https://www.youtube.com/tooplate" class="social-icon-link bi-youtube"></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-12">
+              <p class="copyright-text mb-0 me-4">SCHOOL OF IT MULTIMEDIA</p>
+            </div>
+            
         </div>
-
-        <div class="col-sm-12 col-md-6">
-          <form action="" method="get">
-            <input id="name" name="name" type="text" placeholder="Your Name" class="tm-input" required />
-            <input id="email" name="email" type="email" placeholder="Your Email" class="tm-input" required />
-            <textarea id="message" name="message" rows="8" placeholder="Message" class="tm-input" required></textarea>
-            <button type="submit" class="btn tm-btn-submit">Submit</button>
-          </form>
-        </div>
-
-        <div class="col-sm-12 col-md-6">
-
-          <div class="contact-item">
-            <a rel="nofollow" href="https://www.tooplate.com/contact" class="item-link">
-              <i class="far fa-2x fa-comment mr-4"></i>
-              <span class="mb-0">Chat Online</span>
-            </a>
-          </div>
-
-          <div class="contact-item">
-            <a rel="nofollow" href="mailto:mail@company.com" class="item-link">
-              <i class="far fa-2x fa-envelope mr-4"></i>
-              <span class="mb-0">mail@company.com</span>
-            </a>
-          </div>
-
-          <div class="contact-item">
-            <a rel="nofollow" href="https://www.google.com/maps" class="item-link">
-              <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
-              <span class="mb-0">Our Location</span>
-            </a>
-          </div>
-
-          <div class="contact-item">
-            <a rel="nofollow" href="tel:0100200340" class="item-link">
-              <i class="fas fa-2x fa-phone-square mr-4"></i>
-              <span class="mb-0">255-662-5566</span>
-            </a>
-          </div>
-
-          <div class="contact-item">&nbsp;</div>
-
-        </div>
-      </div><!-- row ending -->
     </div>
+  </footer>
 
-  </section>
+  <!-- Contact -->
+  
 
   <script src="js/jquery-1.9.1.min.js"></script>
   <script src="slick/slick.min.js"></script>
@@ -490,7 +458,7 @@ https://www.tooplate.com/view/2117-infinite-loop
     $(function () {
       // Hero Section - Background Parallax
       background_image_parallax($(".tm-parallax"), 0.30, false);
-      background_image_parallax_2($("#contact"), 0.80);
+      
       background_image_parallax_2($("#testimonials"), 0.80);
 
       // Handle window resize
