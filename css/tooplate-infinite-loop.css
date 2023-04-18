@@ -47,6 +47,12 @@ h2.black {
   letter-spacing: -1px;
 }
 
+.detail {
+  color: var(--dark-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+}
+
 body {
 	font-family: "Raleway", sans-serif;
 	font-size: 1.2em;
@@ -534,6 +540,12 @@ blockquote {
 .projects-btn-wrap .custom-btn {
   font-size: 30px;
   padding: 7.5px 15px;
+}
+
+@media (max-width: 991px) {
+  .detail-image2 {
+    display: none;
+  }
 }
 
 /*---------------------------------------
