@@ -175,6 +175,22 @@ blockquote {
 
 /* Hero */
 
+.hero {
+  position: relative;
+  height: calc(100vh - 133px);
+}
+
+.section-hero {
+  background-image: url('../img/home-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: auto;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
 #home {
 	background-color: #222;
   background-image: url(../img/home-1.jpg);
